@@ -1,0 +1,3 @@
+require(["alerter"], function(alerter) {
+
+});
