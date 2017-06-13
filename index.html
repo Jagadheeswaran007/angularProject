@@ -4,14 +4,23 @@
     <meta charset="utf-8">
     <title>Hello Angular</title>
   </head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <body ng-controller="myController">
-    <h1>Hello Angular</h1>
-    <script data-main = "js/main.js" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.3/require.js">
-
-    </script>
+    <h1 class="page-header">Hello Angular</h1>
+    <div class="container">
+      <div class="row">
+        <div class="form-group row">
+          <label for="" class="col-form-label">Enter Your Name: </label>
+          <input type="text" class="form-control" name="" value="" ng-model="myName">
+        </div>
+        <button type="button" name="button" class="btn btn-danger row" ng-click="calculate()">Calculate</button>
+      </div>
+      <p ng-hide="value == 0">{{value}}</p>
+    </div>
+    <!-- <script data-main = "js/main.js" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.3/require.js"> -->
+    <!-- </script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-    <script src="app.js">
-
-    </script>
-  </body>
-</html>
+    <script src="app.js"></script>
+    <script type="text/javascript" src="js/controller/myController.js"></script>
+ </html

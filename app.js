@@ -1,3 +1,1 @@
-angular.module('myApp',[]).controller("myController", function(){
-  
-});
+angular.module('myApp',[]);
